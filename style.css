@@ -1,0 +1,141 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #ff7f50;
+}
+header {
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+  /* gap: 5px; */
+  height: 30px;
+  cursor: pointer;
+}
+input {
+  width: 25vw;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid white;
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  input {
+    width: 50vw;
+  }
+}
+.add {
+  height: 30px;
+  width: 30px;
+}
+@media screen and (max-width: 768px) {
+  .add {
+    width: 30px;
+  }
+}
+.fa-plus {
+  width: 30px;
+  font-size: 15px;
+  border-radius: 25%;
+  cursor: pointer;
+  color: coral;
+}
+.add:hover {
+  background-color: rgb(255, 117, 67);
+  outline: none;
+  color: white;
+  border: 1px solid black;
+}
+.fa-plus:hover {
+  color: rgb(255, 255, 255);
+}
+.todoContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+.todo {
+  display: flex;
+  background-color: rgb(221, 221, 221);
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  width: 28vw;
+  padding-left: 5px;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .todo {
+    width: 60vw;
+    font-size: 12px;
+  }
+  
+}
+.todoListItem {
+  flex: 1;
+}
+.complete {
+  margin-right: 5px;
+  background-color: rgb(10, 234, 10);
+  color: white;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.trash {
+  margin-right: 5px;
+  background-color: rgb(255, 35, 35);
+  color: white;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 60%;
+}
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+.task {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  color: coral;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .task { 
+    font-size: 12px;
+    width: 10vw;
+  }
+  
+}
