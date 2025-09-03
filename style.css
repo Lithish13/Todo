@@ -135,7 +135,7 @@ ul {
 @media screen and (max-width: 768px) {
   .task { 
     font-size: 12px;
-    width: 10vw;
+    width: 20vw;
   }
   
 }
