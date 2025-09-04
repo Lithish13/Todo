@@ -5,7 +5,6 @@ const todoFormInput = document.querySelector(".inputClass");
 const todoList = document.querySelector(".todo-list");
 const todoDropDown = document.querySelector(".task");
 //event listener
-document.addEventListener("DOMContentLoaded", getTodos);
 todoAdd.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 todoDropDown.addEventListener("click", opitionFilter);
